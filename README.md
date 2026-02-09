@@ -41,30 +41,30 @@ link contoh undangan 2 : https://down-id.img.susercontent.com/file/id-11134207-7
 
 # Konsep 2
 # halaman depan :
--nama pengantin pria
--nama pengantin perempuan
--nama orang diundang
+1. nama pengantin pria
+2. nama pengantin perempuan
+3. nama orang diundang
 
 # halaman dalam kiri :
--ucapan 
--nama pengantin pria
--nama orang tua pengantin pria
--nama pengantin perempuan
--nama orang tua pengantin perempuan
--jam 
--lokasi
+1. ucapan 
+2. nama pengantin pria
+3. nama orang tua pengantin pria
+4. nama pengantin perempuan
+5. nama orang tua pengantin perempuan
+6. jam 
+7. lokasi
 
 # halaman dalam kanan :
--gambar pengantin
--”save the date”
--hari, tanggal, bulan, tahun
--jam
--lokasi
+1. gambar pengantin
+2. ”save the date”
+3. hari, tanggal, bulan, tahun
+4. jam
+5. lokasi
 
 # halaman belakang :
--peta alamat/lokasi
--doa/ayat alquran
--QR kode buat google maps/lokasi
+1. peta alamat/lokasi
+2. doa/ayat alquran
+3. QR kode buat google maps/lokasi
 
 # Wireflow 
 1. Pengguna masuk ke website
