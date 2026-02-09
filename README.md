@@ -6,6 +6,7 @@ Kelas : TI A
 # Link undangan
 
 Link contoh undangan 1 : https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/3f9e79973d43436aa572d1882abe5498~tplv-o3syd03w52-resize-webp:800:800.webp?dr=15584&t=555f072d&ps=933b5bde&shp=6ce186a1&shcp=e1be8f53&idc=my2&from=1826719393
+
 link contoh undangan 2 : https://down-id.img.susercontent.com/file/id-11134207-7r98v-lrdwaj8ed6x23e
 
 # Halaman Depan 
