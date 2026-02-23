@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f3efe8;
+    text-align: center;
+}
+
+/* Section kotak putih */
+.section {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 80px 30px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    /* Background image */
+    background-image: url('bg-wedding.jpg'); /* ganti dengan gambar kamu */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+}
+
+/* Overlay supaya teks kebaca */
+.section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.85);
+}
+
+/* Supaya teks di atas overlay */
+.section * {
+    position: relative;
+}
+
+.home {
+    padding: 120px 30px;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 42px;
+    color: #8c6a5d;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 26px;
+    color: #444;
+}
+
+h3 {
+    font-size: 20px;
+    color: #8c6a5d;
+    letter-spacing: 3px;
+}
+
+p {
+    color: #555;
+    margin: 10px 0;
+}
+
+b {
+    color: #8c6a5d;
+}
+
+hr {
+    width: 80px;
+    margin: 40px auto;
+    border: 1px solid #d6c6bd;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
