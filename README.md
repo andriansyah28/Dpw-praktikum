@@ -36,7 +36,7 @@ link contoh undangan 2 : https://down-id.img.susercontent.com/file/id-11134207-7
 # Halaman belakang
 1. Inisial nama pengantin
 2. denah
-3. ayat al-quran
+3. ucapan dan doa
 
 
 # Konsep 2

@@ -15,57 +15,50 @@ body {
     padding: 20px;
 }
 
-/* Container untuk setiap section */
 div {
+    background: white;
+    margin: 30px;
+    padding: 40px 20px;
+    border: 2px solid #d4af37;
     width: 100%;
     max-width: 800px;
-    background: white;
-    margin-bottom: 30px;
-    padding: 40px 20px;
     text-align: center;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-/* Halaman Depan (Hero Section) */
 .home {
     background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
         url('https://www.transparenttextures.com/patterns/white-diamond.png');
-    border: 2px solid #d4af37;
+}
+
+h1 {
+    font-family: 'Birthstone', cursive;
+    color: #b08d57;
+    font-size: 4rem;
+    margin-top: 15px;
 }
 
 h2 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Birthstone', cursive;
     color: #b08d57;
     letter-spacing: 2px;
     margin-bottom: 10px;
+    font-size: 2rem;
 }
 
-h3 {
-    font-weight: 300;
-    letter-spacing: 5px;
-    margin-bottom: 10px;
+p {
+    font-family: poppins, serif;
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #4a4a4a;
 }
 
 .nama {
     font-family: 'Birthstone', cursive;
-    font-size: 3.5rem;
     color: #8e6d45;
+    font-size: 3.5rem;
     margin: 20px 0;
-}
-
-/* Tipografi Khusus */
-h1 {
-    font-family: 'Lavishly Yours', cursive;
-    font-size: 2.5rem;
-    color: #b08d57;
-    margin-top: 15px;
-}
-
-b {
-    display: block;
-    margin: 10px 0;
-    color: #333;
 }
 
 hr {
@@ -76,17 +69,71 @@ hr {
     width: 80%;
 }
 
-/* Halaman Belakang & Gambar */
 img {
     max-width: 100%;
-    height: auto;
+    height: 350px;
     border-radius: 10px;
     margin-top: 20px;
     border: 5px solid #fff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsif untuk layar sangat kecil */
+/* LIST */
+.acara {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.acara li {
+    padding: 8px;
+    margin: 5px 0;
+    background: #f7f1e8;
+    border-radius: 8px;
+}
+
+/* LINK */
+.link {
+    color: #b08d57;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    color: #8e6d45;
+    text-decoration: underline;
+}
+
+/* FORM */
+.form-ucapan {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-ucapan input,
+.form-ucapan textarea {
+    padding: 10px;
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.form-ucapan button {
+    padding: 10px;
+    border: none;
+    background: #b08d57;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-ucapan button:hover {
+    background: #8e6d45;
+}
+
 @media (max-width: 400px) {
     .nama {
         font-size: 2.5rem;
