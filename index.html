@@ -8,6 +8,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- javascript -->
+    <script src ="javascript.js"></script>
+
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
@@ -18,7 +21,7 @@
     <div class="home section">
         <h2>SAVE</h2>
         <h3>THE DATE</h3>
-        <h3>09 02 2026</h3>
+        <h3>20 04 2026</h3>
         <b>Bumi Surabaya City Resort</b>
         <p>Jl. Jendral Basuki Rachmat No.106 Surabaya</p>
         <br>
@@ -34,9 +37,9 @@
         <h2>Abyan Ubaidillah</h2>
         <p>Putra dari bapak M. Mursid Effendi & ibu Sri</p>
 
-        <h1>Nuril</h1>
-        <h2>Nuril Salsabilla</h2>
-        <p>Putri dari bapak Radit & ibu Siti</p>
+        <h1>Alya</h1>
+        <h2>Alya Kinanti</h2>
+        <p>Putri dari bapak & ibu </p>
         <hr>
     </div>
 
@@ -47,8 +50,10 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
 
+        
+
         <h1>Selasa</h1>
-        <h1>09/02/2026</h1>
+        <h1>20/04/2026</h1>
 
         <h3>Akad Nikah</h3>
         <p>Pukul : 08.00 WIB s/d selesai</p>
@@ -73,11 +78,85 @@
         <hr>
     </div>
 
+    <!-- Countdown-->
+    <div class="section">
+     <div class="container">
+        <h1>Wedding of</h1>
+        <h2>Andriansyah & Alya Kinanti</h2>
+        <p>Menuju Hari Bahagia Kami</p>
+
+        <div class="countdown">
+            <div class="time-box">
+                <span id="days">0</span>
+                <div class="label">Hari</div>
+            </div>
+
+            <div class="time-box">
+                <span id="hours">0</span>
+                <div class="label">Jam</div>
+            </div>
+
+            <div class="time-box">
+                <span id="minutes">0</span>
+                <div class="label">Menit</div>
+            </div>
+
+            <div class="time-box">
+                <span id="seconds">0</span>
+                <div class="label">Detik</div>
+            </div>
+        </div>
+    </div>
+    </div>
+
     <!-- Halaman belakang -->
     <div class="section">
-        <h1>Lokasi</h1>
+    <h1>Lokasi</h1>
+    <div class="lokasi-container">
         <img src="https://idcopy.net/wp-content/uploads/2021/09/contoh-denah-lokasi.webp" alt="denah lokasi">
+        <ul class="lokasi-info">
+            <li>Pukul : 08.00 WIB s/d selesai</li>
+            <li>Tempat : Bumi Surabaya City Resort</li>
+            <li>
+                <a href="https://goo.gl/maps/XYZ123" target="_blank">
+                    Jl. Jendral Basuki Rachmat No.106 Surabaya
+                </a>
+            </li>
+            <li>Atas kehadiran serta doa restu Bapak/Ibu/Sdr/i kami ucapkan terima kasih</li>
+        </ul>
     </div>
+
+    <!-- lokasi pake google maps -->
+    <section class="location-section">
+        <h1>Lokasi Acara Wedding</h1>
+        <p>Kami menantikan kehadiran Anda di hari bahagia kami</p>
+
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.123456789!2d112.750000!3d-7.250000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb123456789%3A0xabcdef123456789!2sSurabaya!5e0!3m2!1sid!2sid!4v0000000000000" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+
+        <a class="btn-map" 
+           href="https://www.google.com/maps?q=Surabaya" 
+           target="_blank">
+           Buka di Google Maps
+        </a>
+    </section>
+
+    <!-- Form RSVP -->
+    <form class="rsvp-form">
+        <h3>RSVP Kehadiran</h3>
+        <input type="text" name="nama" placeholder="Nama Anda" required>
+        <input type="number" name="jumlah" placeholder="Jumlah Tamu" min="1" required>
+        <textarea name="pesan" placeholder="Pesan / Ucapan (opsional)"></textarea>
+        <button type="submit">Kirim RSVP</button>
+    </form>
+</div>
+
+
 
 </body>
 </html>
