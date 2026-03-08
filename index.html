@@ -5,97 +5,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DPW</title>
+
     <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Lavishly+Yours&family=Lobster&display=swap"
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Birthstone&family=Lobster&family=Poppins:wght@300;400;600&display=swap"
         rel="stylesheet">
 
-    <style>
-
-    </style>
 </head>
 
 <body>
 
-    <!-- Halaman depan -->
+    <!-- HALAMAN DEPAN -->
     <div class="home">
-        <h1>SAVE THE DATE</h2>
-            <h3> 09 02 2026</h3>
-            <p>Bumi Surabaya City Resort</p>
-            <p>Jl. Jendral Basuki Rachmat No.106 Surabaya</p> <br>
-            <h1 class="nama">Andri & Alya</h1><br>
-            <p>Kepada Yth,<br>Bapak/Ibu/Saudara/i</p>
-            <hr>
+        <h1>SAVE THE DATE</h1>
+        <h3>09 09 2026</h3>
+        <p>Bumi Surabaya City Resort</p>
+        <p>Jl. Jendral Basuki Rachmat No.106 Surabaya</p>
+        <h1 class="nama">Andri & Alya</h1>
+        <hr>
     </div>
 
-    <!-- Isi 1 -->
+
+    <!-- COUNTDOWN CARD -->
+    <div class="countdown-card">
+        <h2>Menuju Hari Bahagia</h2>
+        <div class="countdown-container">
+
+            <div class="time-box">
+                <span id="days">0</span>
+                <p>Hari</p>
+            </div>
+
+            <div class="time-box">
+                <span id="hours">0</span>
+                <p>Jam</p>
+            </div>
+
+            <div class="time-box">
+                <span id="minutes">0</span>
+                <p>Menit</p>
+            </div>
+
+            <div class="time-box">
+                <span id="seconds">0</span>
+                <p>Detik</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MEMPELAI -->
     <div>
         <h1>Andri</h1>
         <h2>Andriansyah</h2>
-        <p>Putra dari bapak john doe & ibu jane doe </p>
-
+        <p>Putra dari bapak john doe & ibu jane doe</p>
         <h1>Alya</h1>
         <h2>Alya Kinanti</h2>
         <p>Putri dari bapak john doe & ibu jane doe</p>
         <hr>
     </div>
 
-    <!-- Isi 2 -->
-    <div>
-        <h3>Assalamu'alaikum Wr. wb.</h3>
-        <p>Dengan memohon rahmat dan ridho Tuhan Yang Maha Esa,
-            serta dengan penuh rasa syukur dan kebahagiaan,
-            kami bermaksud menyelenggarakan pernikahan putra-putri kami.</p>
-        <h1>Selasa</h1>
-        <h1>09/02/2026</h1>
-        <h3>Akad Nikah</h3>
-        <p>Pukul : 08.00 WIB s/d selesai</p>
-        <p>Tempat : Bumi Surabaya City Resort</p>
-        <p>Jl. Jendral Basuki Rachmat No.106 Surabaya</p>
-        <br>
-        <p>Atas kehadiran serta doa restu Bapak/Ibu/Sdr/i <br> kami ucapkan terima kasih</p>
-        <br>
-        <p>Wassalamu'alaikum Wr.Wb.</p>
-        <br>
-        <p>Kami yang berbahagia</p>
-        <h2>Andri & Alya</h2>
-        <br>
-        <p>Keluarga Bapak john doe & ibu jane doe</p>
-        <p>Keluarga Bapak john doe & Ibu jane doe</p>
-        <hr>
-    </div>
 
+    <!-- LOKASI -->
     <div>
-        <!-- List -->
-        <h3>Rangkaian Acara</h3>
-        <ul class="acara">
-            <li>Akad Nikah</li>
-            <li>Resepsi</li>
-            <li>Doa Bersama</li>
-        </ul>
+        <h3>Lokasi Acara</h3>
+        <iframe src="https://www.google.com/maps?q=Bumi%20Surabaya%20City%20Resort&output=embed" width="100%"
+            height="300" style="border:0;">
+        </iframe>
 
-        <!-- Link -->
-        <p>
-            Lihat lokasi di
-            <a href="#" class="link">Google Maps</a>
-        </p>
     </div>
 
 
-
-    <!-- Halaman belakang -->
+    <!-- FORM TAMU -->
     <div>
-        <h1>A & A</h1>
-        <img src="https://idcopy.net/wp-content/uploads/2021/09/contoh-denah-lokasi.webp" alt="denah lokasi">
-        <!-- Form Ucapan -->
-        <h3>Ucapan & Doa</h3>
-        <form class="form-ucapan">
-            <input type="text" placeholder="Nama Anda" required>
-            <textarea placeholder="Tulis ucapan..." required></textarea>
-            <button type="submit">Kirim</button>
+        <h3>Konfirmasi Kehadiran</h3>
+        <form id="formTamu">
+            <input type="text" id="nama" placeholder="Nama Anda">
+
+            <select id="status">
+                <option value="">Pilih Kehadiran</option>
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak Hadir">Tidak Hadir</option>
+            </select>
+            <button type="submit" class="btn">Kirim</button>
+            <button type="button" class="btn lihat" onclick="lihatData()">Lihat Data Tamu</button>
         </form>
     </div>
-</body>
 
+    <script src="script.js"></script>
+
+</body>
 </html>
