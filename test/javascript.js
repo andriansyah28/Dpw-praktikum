@@ -28,3 +28,4 @@ const countdown = setInterval(function () {
 document.addEventListener("DOMContentLoaded", function() {
     console.log("Halaman lokasi wedding berhasil dimuat!");
 });
+

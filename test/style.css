@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f3efe8;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #8c6a5d;
+}
+
+/* Section kotak putih */
+.section {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 80px 30px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    /* Background image */
+    background-image: url('bg-wedding.jpg'); /* ganti dengan gambar kamu */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+}
+
+/* Overlay supaya teks kebaca */
+.section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.85);
+}
+
+/* Supaya teks di atas overlay */
+.section * {
+    position: relative;
+}
+
+.home {
+    padding: 120px 30px;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 42px;
+    color: #8c6a5d;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 26px;
+    color: #444;
+}
+
+h3 {
+    font-size: 20px;
+    color: #8c6a5d;
+    letter-spacing: 3px;
+}
+
+p {
+    color: #555;
+    margin: 10px 0;
+}
+
+b {
+    color: #8c6a5d;
+}
+
+hr {
+    width: 80px;
+    margin: 40px auto;
+    border: 1px solid #d6c6bd;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/*tambahan*/
+.lokasi-container {
+    display: flex;          
+    align-items: flex-start;
+    gap: 30px;              
+    flex-wrap: wrap;       
+    justify-content: center;
+}
+
+
+.lokasi-container img {
+    width: 300px;           
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+
+.lokasi-info {
+    list-style: disc;
+    padding-left: 20px;
+    text-align: left;
+    color: #555;
+}
+
+.lokasi-info li {
+    margin-bottom: 10px;
+}
+
+.lokasi-info a {
+    color: #8c6a5d;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.lokasi-info a:hover {
+    color: #d6a77a;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*RSVP Form
+.rsvp-form {
+    margin-top: 30px;
+    text-align: left;
+    max-width: 380px;      
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.rsvp-form h3 {
+    font-family: 'Playfair Display', serif;
+    color: #8c6a5d;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.rsvp-form input,
+.rsvp-form textarea {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #d6c6bd;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    resize: none;
+}
+
+.rsvp-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #8c6a5d;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.rsvp-form button:hover {
+    background-color: #d6a77a;
+}
+
+@media screen and (max-width: 600px) {
+    .lokasi-container {
+        flex-direction: column;  
+        align-items: center;
+        gap: 20px;
+    }
+
+    .lokasi-container img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .lokasi-info {
+        padding-left: 0;
+        text-align: center;
+        list-style-position: inside;
+    }
+
+}*/
+
+/*NEW RSVP*/
+/* Container form RSVP */
+#rsvpForm {
+    margin-top: 30px;
+    text-align: left;
+    max-width: 380px;      
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* Judul form */
+#rsvpForm h3 {
+    font-family: 'Playfair Display', serif;
+    color: #8c6a5d;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Input dan textarea */
+#rsvpForm input,
+#rsvpForm textarea {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #d6c6bd;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+/* Tombol submit */
+#rsvpForm button {
+    width: 100%;
+    padding: 12px;
+    background-color: #8c6a5d;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#rsvpForm button:hover {
+    background-color: #d6a77a;
+}
+
+/* Error dan success message */
+#errorNama,
+#errorJumlah {
+    font-size: 0.9em;
+    color: red;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#successMsg {
+    font-size: 1em;
+    color: green;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Responsive untuk layar kecil */
+@media screen and (max-width: 600px) {
+    #rsvpForm {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+/* Section timer */
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.time-box {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 100px;
+}
+
+.time-box span {
+    font-size: 35px;
+    font-weight: bold;
+    display: block;
+}
+
+.label {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/*Lokasi live google map*/
+.location-section {
+    padding: 50px 20px;
+}
+
+p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.map-container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+}
+
+.btn-map {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: #b76e79;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn-map:hover {
+    background: #a0525e;
+    transform: scale(1.05);
+}
