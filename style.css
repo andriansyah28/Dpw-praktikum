@@ -623,3 +623,54 @@ button:hover {
 .btn-map-lokasi:hover {
     background: #ddd;
 }
+
+/*GALLERY*/
+.section-gallery {
+    padding: 80px 20px 120px;
+    height: 100vh;
+    background: #9C907F;
+    text-align: center;
+    position: relative;
+}
+
+/* TITLE */
+.title-gallery {
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+/* GRID */
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+
+    margin-bottom: 60px;
+}
+
+/* CARD */
+.card-gallery {
+    background: #fff;
+    padding: 5px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* IMAGE */
+.card-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* HOVER EFFECT */
+.card-gallery:hover {
+    transform: translateY(-5px) scale(1.03);
+}
