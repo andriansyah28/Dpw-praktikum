@@ -1,177 +1,184 @@
 @import "tailwindcss";
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #fdf8f5;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+  background-color: #fdf8f5;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
 div {
-    background: white;
-    margin: 20px 0;
-    padding: 40px 20px;
-    border: 2px solid #d4af37;
-    width: 100%;
-    max-width: 800px;
-    text-align: center;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    overflow: hidden;
+  background: white;
+  margin: 20px 0;
+  padding: 40px 20px;
+  border: 2px solid #d4af37;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
 }
 
 .home {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-        url('https://www.transparenttextures.com/patterns/white-diamond.png');
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url("https://www.transparenttextures.com/patterns/white-diamond.png");
 }
 
 h1 {
-    font-family: 'Birthstone', cursive;
-    color: #b08d57;
-    font-size: clamp(2.5rem, 8vw, 4rem);
-    margin-top: 15px;
+  font-family: "Birthstone", cursive;
+  color: #b08d57;
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  margin-top: 15px;
 }
 
 h2 {
-    color: #b08d57;
-    margin-bottom: 10px;
+  color: #b08d57;
+  margin-bottom: 10px;
 }
 
 .nama {
-    font-size: clamp(2rem, 6vw, 3.5rem);
+  font-size: clamp(2rem, 6vw, 3.5rem);
 }
 
 p {
-    font-size: 1.1rem;
-    margin: 10px 0;
+  font-size: 1.1rem;
+  margin: 10px 0;
 }
 
 hr {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, transparent, #d4af37, transparent);
-    margin: 40px auto 10px;
-    width: 80%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    #d4af37,
+    transparent
+  );
+  margin: 40px auto 10px;
+  width: 80%;
 }
 
 .countdown-card {
-    background: white;
-    border: #d4af37;
-    padding: 0;
-    margin: 0;
+  background: white;
+  border: #d4af37;
+  padding: 0;
+  margin: 0;
 }
 
 .countdown-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .time-box {
-    flex: 1;
-    min-width: 70px;
-    max-width: 100px;
-    aspect-ratio: 1 / 1;
-    background: #f7f1e8;
-    border: 2px solid #d4af37;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
+  flex: 1;
+  min-width: 70px;
+  max-width: 100px;
+  aspect-ratio: 1 / 1;
+  background: #f7f1e8;
+  border: 2px solid #d4af37;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
 }
 
 .time-box span {
-    font-size: clamp(1.2rem, 4vw, 2rem);
-    font-weight: bold;
-    color: #b08d57;
-    line-height: 1;
+  font-size: clamp(1.2rem, 4vw, 2rem);
+  font-weight: bold;
+  color: #b08d57;
+  line-height: 1;
 }
 
 .time-box p {
-    font-size: 0.75rem;
-    margin: 5px 0 0 0;
-    text-transform: uppercase;
-    font-weight: 600;
+  font-size: 0.75rem;
+  margin: 5px 0 0 0;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 input,
 select,
 textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 8px 0;
-    border: 1px solid #d4af37;
-    border-radius: 8px;
-    font-family: inherit;
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #d4af37;
+  border-radius: 8px;
+  font-family: inherit;
 }
 
 .btn {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    background: #b08d57;
-    color: white;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    margin-top: 10px;
-    transition: 0.3s;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #b08d57;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: 0.3s;
 }
 
 .btn:hover {
-    background: #8e6d45;
+  background: #8e6d45;
 }
 
 .lihat {
-    background: #5f8d4e;
+  background: #5f8d4e;
 }
 
 .back {
-    background: #888;
-    margin-bottom: 15px;
+  background: #888;
+  margin-bottom: 15px;
 }
 
 .table-container {
-    overflow-x: auto;
-    width: 100%;
-    border: none;
+  overflow-x: auto;
+  width: 100%;
+  border: none;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
 th,
 td {
-    border: 1px solid #d4af37;
-    padding: 10px;
-    font-size: 0.9rem;
+  border: 1px solid #d4af37;
+  padding: 10px;
+  font-size: 0.9rem;
 }
 
 th {
-    background: #f7f1e8;
+  background: #f7f1e8;
 }
 
 @media (max-width: 380px) {
-    .countdown-container {
-        gap: 5px;
-    }
+  .countdown-container {
+    gap: 5px;
+  }
 
-    .time-box {
-        min-width: 60px;
-    }
+  .time-box {
+    min-width: 60px;
+  }
 }
