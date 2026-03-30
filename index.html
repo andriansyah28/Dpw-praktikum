@@ -1,102 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DPW</title> 
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DPW</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="./output.css" rel="stylesheet" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Birthstone&family=Lobster&family=Poppins:wght@300;400;600&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Birthstone&family=Lobster&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
+      <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
 
     <!-- HALAMAN DEPAN -->
     <div class="home">
-        <h1>SAVE THE DATE</h1>
-        <h3>09 09 2026</h3>
-        <p>Bumi Surabaya City Resort</p>
-        <p>Jl. Jendral Basuki Rachmat No.106 Surabaya</p>
-        <h1 class="nama">Andri & Alya</h1>
-        <hr>
+      <h1>SAVE THE DATE</h1>
+      <h3>09 09 2026</h3>
+      <p>Bumi Surabaya City Resort</p>
+      <p>Jl. Jendral Basuki Rachmat No.106 Surabaya</p>
+      <h1 class="nama">Andri & Alya</h1>
+      <hr />
     </div>
-
 
     <!-- COUNTDOWN CARD -->
     <div class="countdown-card">
-        <h2>Menuju Hari Bahagia</h2>
-        <div class="countdown-container">
-
-            <div class="time-box">
-                <span id="days">0</span>
-                <p>Hari</p>
-            </div>
-
-            <div class="time-box">
-                <span id="hours">0</span>
-                <p>Jam</p>
-            </div>
-
-            <div class="time-box">
-                <span id="minutes">0</span>
-                <p>Menit</p>
-            </div>
-
-            <div class="time-box">
-                <span id="seconds">0</span>
-                <p>Detik</p>
-            </div>
+      <h2>Menuju Hari Bahagia</h2>
+      <div class="countdown-container">
+        <div class="time-box">
+          <span id="days">0</span>
+          <p>Hari</p>
         </div>
-    </div>
 
+        <div class="time-box">
+          <span id="hours">0</span>
+          <p>Jam</p>
+        </div>
+
+        <div class="time-box">
+          <span id="minutes">0</span>
+          <p>Menit</p>
+        </div>
+
+        <div class="time-box">
+          <span id="seconds">0</span>
+          <p>Detik</p>
+        </div>
+      </div>
+    </div>
 
     <!-- MEMPELAI -->
     <div>
-        <h1>Andri</h1>
-        <h2>Andriansyah</h2>
-        <p>Putra dari bapak john doe & ibu jane doe</p>
-        <h1>Alya</h1>
-        <h2>Alya Kinanti</h2>
-        <p>Putri dari bapak john doe & ibu jane doe</p>
-        <hr>
+      <h1>Andri</h1>
+      <h2>Andriansyah</h2>
+      <p>Putra dari bapak john doe & ibu jane doe</p>
+      <h1>Alya</h1>
+      <h2>Alya Kinanti</h2>
+      <p>Putri dari bapak john doe & ibu jane doe</p>
+      <hr />
     </div>
-
 
     <!-- LOKASI -->
     <div>
-        <h3>Lokasi Acara</h3>
-        <iframe src="https://www.google.com/maps?q=Bumi%20Surabaya%20City%20Resort&output=embed" width="100%"
-            height="300" style="border:0;">
-        </iframe>
-
+      <h3>Lokasi Acara</h3>
+      <iframe
+        src="https://www.google.com/maps?q=Bumi%20Surabaya%20City%20Resort&output=embed"
+        width="100%"
+        height="300"
+        style="border: 0"
+      >
+      </iframe>
     </div>
-
 
     <!-- FORM TAMU -->
     <div>
-        <h3>Konfirmasi Kehadiran</h3>
-        <form id="formTamu">
-            <input type="text" id="nama" placeholder="Nama Anda">
+      <h3>Konfirmasi Kehadiran</h3>
+      <form id="formTamu">
+        <input type="text" id="nama" placeholder="Nama Anda" />
 
-            <select id="status">
-                <option value="">Pilih Kehadiran</option>
-                <option value="Hadir">Hadir</option>
-                <option value="Tidak Hadir">Tidak Hadir</option>
-            </select>
-            <button type="submit" class="btn">Kirim</button>
-            <button type="button" class="btn lihat" onclick="lihatData()">Lihat Data Tamu</button>
-        </form>
+        <select id="status">
+          <option value="">Pilih Kehadiran</option>
+          <option value="Hadir">Hadir</option>
+          <option value="Tidak Hadir">Tidak Hadir</option>
+        </select>
+        <button type="submit" class="btn">Kirim</button>
+        <button type="button" class="btn lihat" onclick="lihatData()">
+          Lihat Data Tamu
+        </button>
+      </form>
     </div>
 
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>
